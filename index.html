@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Fondo anime -->
+    <div class="escena" aria-hidden="true">
+        <div class="sol"></div>
+        <div class="nube nube-1"></div>
+        <div class="nube nube-2"></div>
+        <div class="nube nube-3"></div>
+        <div class="montanas"></div>
+        <div class="petalos"></div>
+
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    
+<main class="calculadora">
+    <header class="cabecera">
+        <span class="titulo">Calculadora</span>
+        <span class="subtitulo">Taller Java</span>
+    </header>
+
+    <section class="pantalla">
+        <div class="historial" id="historial">&NonBreakingSpace;</div>
+        <div class="resultado" id="resultado">0</div>
+    </section>
+
+    <section class="teclado">
+        <button class="tecla funcion" data-action="limpiar">AC</button>
+        <button class="tecla funcion" data-action="borrar">⌫</button>
+        <button class="tecla funcion" data-action="porcentaje">%</button>
+        <button class="tecla funcion" data-action="dividir">/</button>
+
+        <button class="tecla numero" data-numero="7">7</button>
+        <button class="tecla numero" data-numero="8">8</button>
+        <button class="tecla numero" data-numero="9">9</button>
+        <button class="tecla multiplicar" data-action="multiplicar">*</button>
+
+        <button class="tecla numero" data-numero="4">4</button>
+        <button class="tecla numero" data-numero="5">5</button>
+        <button class="tecla numero" data-numero="6">6</button>
+        <button class="tecla operador" data-action="restar">-</button>
+
+        <button class="tecla numero" data-numero="1">1</button>
+        <button class="tecla numero" data-numero="2">2</button>
+        <button class="tecla numero" data-numero="3">3</button>
+        <button class="tecla operador" data-action="sumar">+</button>
+
+        <button class="tecla numero cero" data-numero="0">0</button>
+        <button class="tecla numero" data-numero=".">.</button>
+        <button class="tecla igual" data-numero="igual">=</button>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
