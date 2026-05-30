@@ -10,55 +10,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Fondo anime -->
+    <!-- Fondo anime -->
     <div class="escena" aria-hidden="true">
         <div class="sol"></div>
         <div class="nube nube-1"></div>
         <div class="nube nube-2"></div>
         <div class="nube nube-3"></div>
         <div class="montanas"></div>
-        <div class="petalos"></div>
-
-    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <div class="petalos">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
-    
-<main class="calculadora">
-    <header class="cabecera">
-        <span class="titulo">Calculadora</span>
-        <span class="subtitulo">Taller Java</span>
-    </header>
+    </div>
 
-    <section class="pantalla">
-        <div class="historial" id="historial">&NonBreakingSpace;</div>
-        <div class="resultado" id="resultado">0</div>
-    </section>
+    <main class="calculadora">
+        <header class="cabecera">
+            <span class="titulo">Calculadora</span>
+            <span class="subtitulo">Taller Java</span>
+        </header>
 
-    <section class="teclado">
-        <button class="tecla funcion" data-action="limpiar">AC</button>
-        <button class="tecla funcion" data-action="borrar">⌫</button>
-        <button class="tecla funcion" data-action="porcentaje">%</button>
-        <button class="tecla funcion" data-action="dividir">/</button>
+        <section class="pantalla">
+            <div class="historial" id="historial">&nbsp;</div>
+            <div class="resultado" id="resultado">0</div>
+        </section>
 
-        <button class="tecla numero" data-numero="7">7</button>
-        <button class="tecla numero" data-numero="8">8</button>
-        <button class="tecla numero" data-numero="9">9</button>
-        <button class="tecla multiplicar" data-action="multiplicar">*</button>
+        <section class="teclado">
+            <button class="tecla funcion" data-accion="limpiar">AC</button>
+            <button class="tecla funcion" data-accion="borrar">&#9003;</button>
+            <button class="tecla funcion" data-accion="porcentaje">%</button>
+            <button class="tecla operador" data-accion="dividir">/</button>
 
-        <button class="tecla numero" data-numero="4">4</button>
-        <button class="tecla numero" data-numero="5">5</button>
-        <button class="tecla numero" data-numero="6">6</button>
-        <button class="tecla operador" data-action="restar">-</button>
+            <button class="tecla numero" data-numero="7">7</button>
+            <button class="tecla numero" data-numero="8">8</button>
+            <button class="tecla numero" data-numero="9">9</button>
+            <button class="tecla operador" data-accion="multiplicar">*</button>
 
-        <button class="tecla numero" data-numero="1">1</button>
-        <button class="tecla numero" data-numero="2">2</button>
-        <button class="tecla numero" data-numero="3">3</button>
-        <button class="tecla operador" data-action="sumar">+</button>
+            <button class="tecla numero" data-numero="4">4</button>
+            <button class="tecla numero" data-numero="5">5</button>
+            <button class="tecla numero" data-numero="6">6</button>
+            <button class="tecla operador" data-accion="restar">-</button>
 
-        <button class="tecla numero cero" data-numero="0">0</button>
-        <button class="tecla numero" data-numero=".">.</button>
-        <button class="tecla igual" data-numero="igual">=</button>
-    </section>
-</main>
-<script src="script.js"></script>
+            <button class="tecla numero" data-numero="1">1</button>
+            <button class="tecla numero" data-numero="2">2</button>
+            <button class="tecla numero" data-numero="3">3</button>
+            <button class="tecla operador" data-accion="sumar">+</button>
+
+            <button class="tecla numero cero" data-numero="0">0</button>
+            <button class="tecla numero" data-numero=".">.</button>
+            <button class="tecla igual" data-accion="igual">=</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
